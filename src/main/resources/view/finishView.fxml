@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="800.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="iim.controller.FinishViewController">
+    <children>
+        <BorderPane layoutX="200.0" layoutY="68.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <GridPane prefHeight="261.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="2.0" prefWidth="203.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="452.0" minWidth="10.0" prefWidth="133.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="452.0" minWidth="10.0" prefWidth="264.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="147.0" minHeight="0.0" prefHeight="53.0" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="195.0" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <VBox prefHeight="182.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                            <children>
+                                <FlowPane/>
+                                <JFXRadioButton selected="true" text="API starten">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="toggleRadio"/>
+                                    </toggleGroup>
+                                    <padding>
+                                        <Insets bottom="10.0" top="50.0"/>
+                                    </padding>
+                                    <VBox.margin>
+                                        <Insets left="10.0" top="10.0"/>
+                                    </VBox.margin>
+                                </JFXRadioButton>
+                                <JFXRadioButton text="IDE starten" toggleGroup="$toggleRadio">
+                                    <padding>
+                                        <Insets bottom="10.0" top="50.0"/>
+                                    </padding>
+                                    <VBox.margin>
+                                        <Insets left="10.0" top="10.0"/>
+                                    </VBox.margin>
+                                </JFXRadioButton>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="191.0" prefWidth="264.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <padding>
+                                <Insets top="1.0"/>
+                            </padding>
+                        </VBox>
+                        <HBox prefHeight="91.0" prefWidth="96.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <children>
+                                <ButtonBar>
+                                    <buttons>
+
+                                        <Button fx:id="returnButton" cancelButton="true" onAction="#handleButtonAction"
+                                                styleClass="btn, btn-default" text="Zurück">
+                                            <cursor>
+                                                <Cursor fx:constant="HAND"/>
+                                            </cursor>
+                                        </Button>
+
+
+                                        <Button fx:id="continueButton" defaultButton="true"
+                                                onAction="#handleButtonAction" styleClass="btn, btn-primary"
+                                                text="Weiter">
+                                            <cursor>
+                                                <Cursor fx:constant="HAND"/>
+                                            </cursor>
+                                            <textFill>
+                                                <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                                    <stops>
+                                                        <Stop color="#106b50"/>
+                                                        <Stop color="WHITE" offset="1.0"/>
+                                                    </stops>
+                                                </RadialGradient>
+                                            </textFill>
+                                            <effect>
+                                                <DropShadow/>
+                                            </effect>
+                                        </Button>
+                                    </buttons>
+                                </ButtonBar>
+                            </children>
+                        </HBox>
+
+                    </children>
+                </GridPane>
+            </center>
+            <top>
+                <Label alignment="CENTER" prefHeight="78.0" prefWidth="813.0" text="Configuration"
+                       BorderPane.alignment="CENTER">
+                    <font>
+                        <Font size="23.0"/>
+                    </font>
+                </Label>
+            </top>
+        </BorderPane>
+        <Label fx:id="closeWindow" layoutX="769.0" layoutY="-1.0" onMouseClicked="#closeButtonAction" prefHeight="27.0"
+               prefWidth="31.0" text="X" textFill="#1b6cd7">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
