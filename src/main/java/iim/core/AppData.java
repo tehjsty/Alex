@@ -1,12 +1,7 @@
 package iim.core;
 
-import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,19 +9,8 @@ import java.util.List;
 public class AppData {
 
     //Fields for all scenes
-    private final static ArrayList <Node> nodes = new ArrayList <>();
-    @FXML
-    protected AnchorPane root;
-    @FXML
-    protected Stage primaryStage;
-    @FXML
-    protected Label closeWindow;
-    @FXML
-    protected Button scanButton;
-    @FXML
-    protected Button webButtonHelp;
-    double x;
-    double y;
+    private static final ArrayList <Node> nodes = new ArrayList <>();
+
 
     //method to save the state of the Checkboxes
     protected static List <Node> getAllNodes(Parent root) {
@@ -43,11 +27,7 @@ public class AppData {
         }
     }
 
-    @FXML
-    public void closeButtonAction() {
-        primaryStage = (Stage) closeWindow.getScene().getWindow();
-        primaryStage.close();
-    }
+
     //Test als allgemeine Variable wie closeButtonAction();
 
 //    public void moveWindow() {

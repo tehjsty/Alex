@@ -1,8 +1,6 @@
 package iim.core;
 
 import iim.connection.NetworkCheck;
-import iim.connection.SSHConnection;
-import iim.data.ApplicationData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -24,7 +22,7 @@ import javafx.stage.StageStyle;
  */
 
 
-public class Main extends Application implements ApplicationData {
+public class Main extends Application {
     private double x;
     private double y;
 

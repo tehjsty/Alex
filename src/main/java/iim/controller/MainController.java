@@ -1,7 +1,7 @@
 package iim.controller;
 
 import iim.core.AppData;
-import iim.data.ApplicationData;
+import iim.data.RootLayout;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,7 +14,7 @@ import java.io.IOException;
 /*
     //TODO for later JavaFX GUI use
  */
-public class MainController extends AppData implements ApplicationData {
+public class MainController extends RootLayout {
     @FXML
     private Label eprocField;
     @FXML
@@ -26,13 +26,13 @@ public class MainController extends AppData implements ApplicationData {
 
         if (event.getSource() == eprocField) {
             primaryStage = (Stage) eprocField.getScene().getWindow();
-            root = FXMLLoader.load(getClass().getResource(eprocView));
+            root = FXMLLoader.load(getClass().getResource(CONFIG_VIEW));
         } else {
             primaryStage = (Stage) kdsField.getScene().getWindow();
-            root = FXMLLoader.load(getClass().getResource(kdsView));
+            root = FXMLLoader.load(getClass().getResource(CONFIG_VIEW));
         }
         primaryStage.setScene(new Scene(root));
-        root.getStylesheets().add("org/kordamp/bootstrapfx/bootstrapfx.css");
+        root.getStylesheets().add(BOOTSTRAP_CSS);
         primaryStage.show();
     }
 

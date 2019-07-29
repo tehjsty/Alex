@@ -1,6 +1,6 @@
 package iim.connection;
 
-import iim.data.ApplicationData;
+import iim.data.RootLayout;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -15,9 +15,10 @@ import java.util.List;
  *
  */
 
-public class NetworkCheck implements ApplicationData {
-    private static final int startIP = 2; //0 ist default
-    private static final int maxIP = 10;
+public class NetworkCheck extends RootLayout {
+    private static final int START_IP = 2; //0 ist default
+    private static final int MAX_IP = 10;
+
 
 
 //    //Liste mit erfolgreichen Verbindungen
@@ -35,7 +36,7 @@ public class NetworkCheck implements ApplicationData {
             // IPv4 usage
             byte[] ip = virtualIp.getAddress();
 
-            for (int i = startIP; i <= maxIP; ++i) {
+            for (int i = START_IP; i <= MAX_IP; ++i) {
                 ip[3] = (byte) i;
                 address = InetAddress.getByAddress(ip);
                 if (address.isReachable(0)) {
@@ -45,7 +46,7 @@ public class NetworkCheck implements ApplicationData {
 //                      Überlegung in neue Liste zu speichern, falls mehr als zwei VMs
 //                      gefunden werden
 
-                } else System.out.println(request + address);
+                } else System.out.println(REQUEST + address);
             }     //Debug Ausgabe, wird später entfernt
 
         } catch (Exception e) {

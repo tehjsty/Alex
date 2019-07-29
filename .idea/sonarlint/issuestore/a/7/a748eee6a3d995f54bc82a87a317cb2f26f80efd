@@ -1,15 +1,0 @@
-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(È˜È∫8“È∞›Ω-
-tsquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(ç“«ﬁ8Ó©∞ØΩ-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ﬂôãﬁ8Ó©∞ØΩ-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(≠á÷Œ8Ó©∞ØΩ-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ç“«ﬁ8Ó©∞ØΩ-
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(√Àﬂì˝ˇˇˇˇ8Ó©∞ØΩ-
-xsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¨ìäT8“È∞›Ω-
-@squid:S1214""Move constants to a class or enum.(ÿïﬁ–8Ó©∞ØΩ-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ﬂ÷≠ú8É‹∆ÿø-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(°Õ¸⁄8Ó©∞ØΩ-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.( õûÀ8Ó©∞ØΩ-
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(§«∑¥ˇˇˇˇˇ8Ó©∞ØΩ-
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(›¥¥«˘ˇˇˇˇ8Ó©∞ØΩ-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Úõ‡›8Ó©∞ØΩ-

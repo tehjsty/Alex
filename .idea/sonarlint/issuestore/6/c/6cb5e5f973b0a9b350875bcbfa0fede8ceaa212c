@@ -1,14 +1,4 @@
 
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¾òï·8×ÂØ¿-
-Nsquid:S1481^"+Remove this unused "output" local variable.(ıÒ›Ùùÿÿÿÿ8Œ…‹§¿-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(›˜ğ8•€ÌØ¿-
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(àÿäûÿÿÿÿÿ8×ÂØ¿-
-Osquid:S1068",Remove this unused "listName" private field.(Ã ‰Íùÿÿÿÿ8ù¬Ó×½-
-Rsquid:S1068"/Remove this unused "failMessage" private field.(àÿäûÿÿÿÿÿ8×ÂØ¿-
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¯¶„ˆùÿÿÿÿ8œ²ï®½-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(í¤á¹8­¥ùÙ¿-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(­ÒÄ8œ²ï®½-
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã ‰Íùÿÿÿÿ8–ºÑ×½-
-~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(©½äşÿÿÿÿ8œ²ï®½-
-ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(„è‰†8×ÂØ¿-
-Usquid:S1135*"2Complete the task associated to this TODO comment.(ÌÚ¶æÿÿÿÿÿ8œ²ï®½-
+isquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(¨¶Æ8„ûÁíÃ-
+Usquid:S1135+"2Complete the task associated to this TODO comment.(ÌÚ¶æÿÿÿÿÿ8„ûÁíÃ-
+Nsquid:S1481f"+Remove this unused "output" local variable.(ıÒ›Ùùÿÿÿÿ8„ûÁíÃ-
