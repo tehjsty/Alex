@@ -1,12 +1,16 @@
 package iim.core;
 
 import iim.connection.NetworkCheck;
+import iim.connection.SSHConnection;
+import iim.controller.ConfigController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
+import static iim.data.RootLayout.*;
 
 /**
  * Tool to analyze projects
@@ -28,8 +32,8 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-        NetworkCheck networkCheck = new NetworkCheck();
-        networkCheck.scanNetwork();
+
+
         launch(args);
     }
 
@@ -44,7 +48,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
 
-        AnchorPane root = FXMLLoader.load(getClass().getResource(mainView));
+        AnchorPane root = FXMLLoader.load(getClass().getResource(NEW_TEST));
         //Lambda mouse event handler
         root.setOnMousePressed(event -> {
             x = primaryStage.getX() - event.getScreenX();
@@ -57,11 +61,11 @@ public class Main extends Application {
 
 
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setTitle(programTitle);
+        primaryStage.setTitle(PROGRAM_TITLE);
         primaryStage.setResizable(false);
         // primaryStage.getIcons().add(new Image("/images/logo.jpg"));
         primaryStage.setScene(new Scene(root));
-        root.getStylesheets().add(bootstrapCSS);
+        root.getStylesheets().add(BOOTSTRAP_CSS);
         primaryStage.show();
 
 

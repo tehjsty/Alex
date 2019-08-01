@@ -1,5 +1,6 @@
 
-Jsquid:S1172",Remove this unused method parameter "event".(ÆƒòÃ8ú’ëº½-
-Osquid:S1172)",Remove this unused method parameter "event".(òğıùıÿÿÿÿ8ø÷ø×½-
-´%squid:RedundantThrowsDeclarationCheck)"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(òğıùıÿÿÿÿ8î§ù×½-
-hsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(£Ó‘8‡¼¬°½-
+Jsquid:S1172>",Remove this unused method parameter "event".(©Úø¿8½€ÅÄ-
+Xsquid:UselessImportCheck"-Remove this unused import 'iim.core.AppData'.(å¦8‹²õÄÄ-
+isquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(ø«‚ê8ôíïÂÄ-
+Jsquid:S1172$",Remove this unused method parameter "event".(ÆƒòÃ8ô²ùÄÄ-
+hsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(£Ó‘8úğ­½Ä-

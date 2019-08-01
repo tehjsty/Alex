@@ -126,11 +126,11 @@
                 </Label>
             </top>
         </BorderPane>
-        <Label fx:id="closeWindow" layoutX="769.0" layoutY="-1.0" onMouseClicked="#closeButtonAction" prefHeight="27.0"
-               prefWidth="31.0" text="X" textFill="#1b6cd7">
-            <font>
-                <Font size="20.0"/>
-            </font>
-        </Label>
+<!--        <Label fx:id="closeWindow" layoutX="769.0" layoutY="-1.0" onMouseClicked="#closeButtonAction" prefHeight="27.0"-->
+<!--               prefWidth="31.0" text="X" textFill="#1b6cd7">-->
+<!--            <font>-->
+<!--                <Font size="20.0"/>-->
+<!--            </font>-->
+<!--        </Label>-->
     </children>
 </AnchorPane>

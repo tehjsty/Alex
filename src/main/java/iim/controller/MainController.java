@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.awt.event.ActionEvent;
 import java.io.IOException;
 
 /*
@@ -21,8 +22,7 @@ public class MainController extends RootLayout {
     private Label kdsField;
 
 
-    public void handleButtonAction(MouseEvent event) throws IOException {
-
+    public void handleButtonAction(ActionEvent event) throws IOException {
 
         if (event.getSource() == eprocField) {
             primaryStage = (Stage) eprocField.getScene().getWindow();

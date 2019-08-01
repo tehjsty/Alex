@@ -1,5 +1,7 @@
 
-nsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(’ê‚›ıÿÿÿÿ8ƒûÁíÃ-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Äœªš8ƒûÁíÃ-
-nsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(Ã²şëüÿÿÿÿ8ƒûÁíÃ-
-Xsquid:S1118	":Add a private constructor to hide the implicit public one.(‰ÕõÒ8¿ÃèíÃ-
+nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(Ã²şëüÿÿÿÿ8ˆ¶ÜÄÄ-
+nsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(’ê‚›ıÿÿÿÿ8ˆ¶ÜÄÄ-
+Œ"squid:ClassVariableVisibilityCheck"XMake primaryStage a static final constant or non-public and provide accessors if needed.(İ‚—>8İŞÄÄ-
+csquid:UselessImportCheck"8Remove this unused import 'iim.connection.NetworkCheck'.(ôáš¡8ˆ¶ÜÄÄ-
+isquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(Äœªš8ˆ¶ÜÄÄ-
+…"squid:ClassVariableVisibilityCheck"PMake root a static final constant or non-public and provide accessors if needed.(ı„È¬8İŞÄÄ-

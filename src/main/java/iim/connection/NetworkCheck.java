@@ -40,7 +40,7 @@ public class NetworkCheck extends RootLayout {
                 ip[3] = (byte) i;
                 address = InetAddress.getByAddress(ip);
                 if (address.isReachable(0)) {
-                    ipList.add(address.getHostAddress()); //entferne forward Slash
+                    this.ipList.add(address.getHostAddress()); //entferne forward Slash
 
 //                      TO DO:
 //                      Überlegung in neue Liste zu speichern, falls mehr als zwei VMs

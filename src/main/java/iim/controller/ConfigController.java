@@ -2,8 +2,11 @@ package iim.controller;
 
 import iim.connection.NetworkCheck;
 import iim.connection.SSHConnection;
-import iim.core.AppData;
+import iim.data.RootLayout;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
@@ -18,12 +21,28 @@ import java.io.IOException;
 
  */
 
-public class ConfigController extends AppData {
+public class ConfigController extends RootLayout {
 
 
-    WebView webView = new WebView();
-    WebEngine webEngine = webView.getEngine();
+    @FXML
+    protected Button scanButton;
+    private WebView webView = new WebView();
+    private WebEngine webEngine = webView.getEngine();
 
+    public Thread newThread() {
+        return new Thread(() -> {
+            NetworkCheck networkCheck = new NetworkCheck();
+            networkCheck.scanNetwork();
+            SSHConnection sshConnection = new SSHConnection(networkCheck.getIpList());
+            try {
+                sshConnection.connectionToSsh("cd workspace/ ; ls -d */\n");
+                sshConnection.readOutput();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
+    }
 
     public void buttonAction(ActionEvent event) {
 
@@ -38,15 +57,17 @@ public class ConfigController extends AppData {
 
     }
 
-    public void handleButtonAction(MouseEvent event) throws IOException, InterruptedException {
-        NetworkCheck networkCheck = new NetworkCheck();
-        SSHConnection sshConnection = new SSHConnection(networkCheck.getIpList());
-        sshConnection.connectionToSsh("cd workspace/art/ ; ls\n");
-        sshConnection.readOutput();
-        sshConnection.closeConnection();
+    public void handleButtonAction(MouseEvent event) throws IOException {
+
+        scanButton.getScene().getWindow();
+        FXMLLoader.load(getClass().getResource(TEST_VIEW));
+
+        this.newThread().start();
 
 
+//        sshConnection.closeConnection();
 
     }
+
 
 }

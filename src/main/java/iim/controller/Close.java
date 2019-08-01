@@ -7,8 +7,6 @@ import javafx.stage.Stage;
 
 public class Close extends RootLayout {
 
-
-
     @FXML
     private Label closeWindow;
     @FXML

@@ -1,12 +1,17 @@
 package iim.core;
 
+import iim.connection.NetworkCheck;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AppData {
+    public Stage primaryStage;
+    public AnchorPane root;
 
     //Fields for all scenes
     private static final ArrayList <Node> nodes = new ArrayList <>();
